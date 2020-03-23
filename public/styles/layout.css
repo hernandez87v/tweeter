@@ -6,7 +6,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -15,8 +17,9 @@ html {
  */
 
 body {
-  color: #545149;
+  color: #ffffff;
   background-color: #f4f1ec;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
 }
 
