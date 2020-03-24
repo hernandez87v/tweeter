@@ -45,10 +45,15 @@
     </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero quis quas
-      accusantium molestiae nesciunt, magni molestias perspiciatis, sed ipsa
-      velit nisi excepturi aut? Molestias, laboriosam. Esse natus asperiores
-      delectus? Quasi.
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form>
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <button type="submit">Tweet</button>
+          <output name="counter" class="counter" for="tweet-text">140</output>
+        </form>
+      </section>
     </main>
   </body>
 </html>
