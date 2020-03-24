@@ -1,0 +1,32 @@
+button {
+  background-color: #4052a0;
+  font-family: 'Bungee', cursive;
+  position: absolute;
+  left: 10%;
+  margin: 10% 1.5em;
+}
+
+.counter {
+  font-family: 'Bungee', cursive;
+  position: absolute;
+  right: 10%;
+  margin: 10% 1.5em;
+}
+
+tweet-text {
+  position: absolute;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+label {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  border-bottom-style: solid;
+}
+
+textarea {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #f4f1ec;
+  border-color: #f4f1ec;
+  border-bottom-style: solid;
+}
