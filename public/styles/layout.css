@@ -23,6 +23,10 @@ body {
   font-size: 24px;
 }
 
+main {
+  margin: 410px 5% 5%;
+  color: black;
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
