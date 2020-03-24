@@ -27,6 +27,14 @@ label {
 textarea {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #f4f1ec;
-  border-color: #f4f1ec;
+  border: none;
   border-bottom-style: solid;
+  resize: none;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5em;
 }

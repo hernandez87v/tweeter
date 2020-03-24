@@ -15,8 +15,10 @@ span {
   padding: 1.5em;
 }
 
-.nav-right {
+.nav-write-tweet {
+  font-family: 'Source Sans Pro', sans-serif;
   position: absolute;
-  /* padding: 1.5em; */
-  right: 0;
+  top: 0.2em;
+  right: 1.5em;
+  flex-direction: column;
 }
