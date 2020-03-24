@@ -4,6 +4,7 @@ button {
   position: absolute;
   left: 10%;
   margin: 10% 1.5em;
+  border: none;
 }
 
 .counter {
