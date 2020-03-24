@@ -2,4 +2,20 @@ header {
   height: 400px;
   width: 100%;
   position: absolute;
+  background-color: #00cccc;
+  background-image: url('https://www.transparenttextures.com/patterns/batthern.png');
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.profile-avatar {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.profile-user {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }

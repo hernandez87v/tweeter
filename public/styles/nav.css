@@ -8,7 +8,6 @@ nav {
   width: 100%;
   top: 0;
   padding: 1.5em;
-  padding-top: 1.5em;
   z-index: auto;
 }
 
@@ -16,9 +15,8 @@ span {
   padding: 1.5em;
 }
 
-/* .nav-right {
+.nav-right {
   position: absolute;
-  left: 0;
-  text-align: center;
-  margin: 0 auto;
-} */
+  /* padding: 1.5em; */
+  right: 0;
+}
