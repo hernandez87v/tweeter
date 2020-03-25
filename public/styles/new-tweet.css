@@ -12,13 +12,6 @@ output.counter {
   right: 6%;
   margin-top: 4em;
 }
-/* 
-tweet-text {
-  position: absolute;
-  margin-top: 20em;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-style: #545149;
-} */
 
 label {
   font-family: 'Source Sans Pro', sans-serif;
@@ -55,6 +48,7 @@ header.head-container {
   margin-top: 0px;
   height: 0px;
   width: 100%;
+  color: #545149;
   /* align-self: center; */
 }
 
@@ -64,15 +58,25 @@ p.last-tweet-container {
   margin-top: 3.5em;
   padding-left: 0.5em;
 }
-#tweets-conatiner {
+article.tweets-container {
+  margin-bottom: 2em;
 }
-#tweet-name-container {
-  padding-left: 3em;
-  padding-top: 0.6em;
+
+article:hover {
+  box-shadow: 5px 5px #c8cfe4;
+}
+
+article:hover #tweet-username-container {
+  display: block;
 }
 
 #tweet-username-container {
+  display: none;
   padding-right: 2em;
+  padding-top: 0.6em;
+}
+
+#tweet-name-container {
   padding-top: 0.6em;
 }
 
