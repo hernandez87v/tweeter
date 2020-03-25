@@ -38,11 +38,6 @@ textarea {
   width: 90%;
 }
 
-/* footer {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 0.5em;
-} */
 /* --------------------- NEW TWEETS IN CONTAINER ------------------- */
 article {
   position: absolute;
@@ -64,27 +59,21 @@ header.head-container {
 
 p.last-tweet-container {
   position: absolute;
-  width: 100%;
-  margin-top: 5%;
+  width: 95%;
+  margin-top: 3.5em;
   padding-left: 0.5em;
-  padding-bottom: 0.6em;
-  /* border-bottom: solid;
-  border-color: #545149; */
 }
 #tweets-conatiner {
 }
 #tweet-name-container {
   /* margin-top: 10em; */
   padding-left: 3em;
-  padding-bottom: 0.6em;
+  padding-top: 0.6em;
 }
 
 #tweet-username-container {
-  font-weight: bold;
-  padding: 0em;
-  padding-bottom: 5%;
-  /* margin-top: 5em; */
-  margin-left: 96%;
+  margin-left: 90%;
+  margin-bottom: 10em;
 }
 
 .head-container {
