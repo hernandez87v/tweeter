@@ -2,23 +2,23 @@ button {
   background-color: #4052a0;
   font-family: 'Bungee', cursive;
   position: absolute;
-  left: 10%;
-  margin: 10% 1.5em;
+  margin-top: 4em;
   border: none;
 }
 
-.counter {
+output.counter {
   font-family: 'Bungee', cursive;
   position: absolute;
-  right: 10%;
-  margin: 10% 1.5em;
+  right: 6%;
+  margin-top: 4em;
 }
-
+/* 
 tweet-text {
   position: absolute;
+  margin-top: 20em;
   font-family: 'Source Sans Pro', sans-serif;
   font-style: #545149;
-}
+} */
 
 label {
   font-family: 'Source Sans Pro', sans-serif;
@@ -28,12 +28,14 @@ label {
 
 textarea {
   font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 1em;
+  position: absolute;
   background-color: #f4f1ec;
   border: none;
   border-bottom-style: solid;
   border-color: #545149;
   resize: none;
-  width: 100%;
+  width: 90%;
 }
 
 /* footer {
@@ -43,15 +45,17 @@ textarea {
 } */
 /* --------------------- NEW TWEETS IN CONTAINER ------------------- */
 article {
+  position: absolute;
   margin-top: 170px;
   height: 220px;
-  width: 100%;
+  width: 90%;
   border: 3px solid #545149;
   background-color: #f4f1ec;
   padding: 1em;
 }
 
 header.head-container {
+  position: absolute;
   margin-top: 0px;
   height: 0px;
   width: 90%;
@@ -59,28 +63,34 @@ header.head-container {
 }
 
 p.last-tweet-container {
-  margin-top: 12%;
+  position: absolute;
+  width: 100%;
+  margin-top: 5%;
   padding-left: 0.5em;
   padding-bottom: 0.6em;
-  border-bottom: solid;
-  border-color: #545149;
+  /* border-bottom: solid;
+  border-color: #545149; */
 }
-
+#tweets-conatiner {
+}
 #tweet-name-container {
-  margin-top: 10px;
-  padding-left: 0.5em;
+  /* margin-top: 10em; */
+  padding-left: 3em;
   padding-bottom: 0.6em;
 }
 
 #tweet-username-container {
   font-weight: bold;
-  margin-left: 65%;
+  padding: 0em;
+  padding-bottom: 5%;
+  /* margin-top: 5em; */
+  margin-left: 96%;
 }
 
 .head-container {
   background-color: #f4f1ec;
   width: 90%;
-  margin-top: 50%;
+  /* margin-top: 55em; */
 }
 /* p.tweets-container {
   font-family: Source Sans Pro, sans-serif;
@@ -96,8 +106,12 @@ p.last-tweet-container {
 footer.foot-container {
   background-color: #f4f1ec;
   padding-left: 1em;
-
-  margin-top: 10px;
+  padding-top: 0.8em;
+  position: absolute;
+  margin-top: 11em;
   font-size: small;
   font-weight: 600;
+  border-top: solid;
+  border-color: #545149;
+  width: 95%;
 }
