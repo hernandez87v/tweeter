@@ -50,10 +50,11 @@ article {
 }
 
 header.head-container {
-  position: absolute;
+  display: flex;
+  justify-content: space-between;
   margin-top: 0px;
   height: 0px;
-  width: 90%;
+  width: 100%;
   /* align-self: center; */
 }
 
@@ -66,31 +67,19 @@ p.last-tweet-container {
 #tweets-conatiner {
 }
 #tweet-name-container {
-  /* margin-top: 10em; */
   padding-left: 3em;
   padding-top: 0.6em;
 }
 
 #tweet-username-container {
-  margin-left: 90%;
-  margin-bottom: 10em;
+  padding-right: 2em;
+  padding-top: 0.6em;
 }
 
 .head-container {
   background-color: #f4f1ec;
   width: 90%;
-  /* margin-top: 55em; */
 }
-/* p.tweets-container {
-  font-family: Source Sans Pro, sans-serif;
-  background-color: #f4f1ec;
-  height: 200px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  border: black;
-  border: solid;
-} */
 
 footer.foot-container {
   background-color: #f4f1ec;
