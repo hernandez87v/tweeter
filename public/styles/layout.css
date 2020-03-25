@@ -30,28 +30,3 @@ main {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
-.head-container {
-  background-color: #f4f1ec;
-  width: 90%;
-  margin-top: 20%;
-}
-article.tweets-container {
-  font-family: Source Sans Pro, sans-serif;
-  background-color: #f4f1ec;
-  height: 220px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  border: black;
-  border: solid;
-}
-/* .tweets-container {
-  font-family: Source Sans Pro, sans-serif;
-  background-color: #f4f1ec;
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  margin-top: 10%;
-  margin: 0.5em;
-} */

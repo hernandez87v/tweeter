@@ -8,7 +8,7 @@ $(document).ready(function() {
     } else if (limit <= 20) {
       $('.counter').css({ color: 'peru' });
     } else if (limit >= 21) {
-      $('.counter').css({ color: 'black' });
+      $('.counter').css({ color: '#545149' });
     }
     $('.counter').text(limit);
   });

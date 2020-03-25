@@ -17,6 +17,7 @@ button {
 tweet-text {
   position: absolute;
   font-family: 'Source Sans Pro', sans-serif;
+  font-style: #545149;
 }
 
 label {
@@ -30,6 +31,7 @@ textarea {
   background-color: #f4f1ec;
   border: none;
   border-bottom-style: solid;
+  border-color: #545149;
   resize: none;
   width: 100%;
 }
@@ -39,3 +41,63 @@ textarea {
   justify-content: space-between;
   padding-top: 0.5em;
 } */
+/* --------------------- NEW TWEETS IN CONTAINER ------------------- */
+article {
+  margin-top: 170px;
+  height: 220px;
+  width: 100%;
+  border: 3px solid #545149;
+  background-color: #f4f1ec;
+  padding: 1em;
+}
+
+header.head-container {
+  margin-top: 0px;
+  height: 0px;
+  width: 90%;
+  /* align-self: center; */
+}
+
+p.last-tweet-container {
+  margin-top: 12%;
+  padding-left: 0.5em;
+  padding-bottom: 0.6em;
+  border-bottom: solid;
+  border-color: #545149;
+}
+
+#tweet-name-container {
+  margin-top: 10px;
+  padding-left: 0.5em;
+  padding-bottom: 0.6em;
+}
+
+#tweet-username-container {
+  font-weight: bold;
+  margin-left: 65%;
+}
+
+.head-container {
+  background-color: #f4f1ec;
+  width: 90%;
+  margin-top: 50%;
+}
+/* p.tweets-container {
+  font-family: Source Sans Pro, sans-serif;
+  background-color: #f4f1ec;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: black;
+  border: solid;
+} */
+
+footer.foot-container {
+  background-color: #f4f1ec;
+  padding-left: 1em;
+
+  margin-top: 10px;
+  font-size: small;
+  font-weight: 600;
+}

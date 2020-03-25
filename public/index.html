@@ -58,16 +58,26 @@
           <textarea name="text" id="tweet-text"></textarea>
           <footer>
             <button type="submit"><font color="white">Tweet</font></button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+            <output name="counter" class="counter" for="tweet-text"
+              ><font color="#545149">140</font>
+            </output>
           </footer>
         </form>
       </section>
-      <header class="head-container">
-        <article class="tweets-container">
-          Hello World!
-        </article>
-        <footer></footer>
-      </header>
+      <article class="tweets-container">
+        <header class="head-container">
+          <span id="tweet-name-container"
+            ><font color="#545149">Vlad</font></span
+          >
+          <span id="tweet-username-container"
+            ><font color="#C8CFE4">@vlad</font></span
+          >
+        </header>
+        <p class="last-tweet-container">Hello World!</p>
+        <footer class="foot-container">
+          <font color="#545149">1 day ago</font>
+        </footer>
+      </article>
     </main>
   </body>
   <script src="/scripts/composer-char-counter.js"></script>
