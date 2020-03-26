@@ -97,3 +97,7 @@ footer.foot-container {
   border-color: #545149;
   width: 95%;
 }
+
+#error-message {
+  color: red;
+}

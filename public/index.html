@@ -53,22 +53,27 @@
     <main class="container">
       <section class="new-tweet">
         <!-- <h2>Compose Tweet</h2> -->
-        <form action="/tweets/" method="POST">
+        <span id="error-message"> </span>
+        <form action="/tweets/" method="POST" class="tweet-block">
           <label for="tweet-text"></label>
           <textarea
             name="text"
             id="tweet-text"
+            class="new-tweet-textarea"
             placeholder="What are you humming about?"
           ></textarea>
           <footer>
-            <button type="submit"><font color="white">Tweet</font></button>
+            <button type="submit" class="tweet-button">
+              <font color="white">Tweet</font>
+            </button>
             <output name="counter" class="counter" for="tweet-text"
               ><font color="#545149">140</font>
             </output>
           </footer>
         </form>
       </section>
-      <article class="tweets-container">
+      <section id="tweets-container"></section>
+      <!-- <article class="tweets-container">
         <header class="head-container">
           <div id="tweet-name-container"><font color="#545149">Vlad</font></div>
           <div id="tweet-username-container">
@@ -82,8 +87,7 @@
         <footer class="foot-container">
           <font color="#545149">1 day ago</font>
         </footer>
-      </article>
+      </article> -->
     </main>
   </body>
-  <script src="/scripts/composer-char-counter.js"></script>
 </html>
