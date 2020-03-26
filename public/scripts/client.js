@@ -58,6 +58,14 @@ $(document).ready(function() {
     return $article;
   };
 
+  // $('tweet-block').on('submit', function() {
+  //   if ($('tweet-text').val().length > 140) {
+  //     alert('Your post exceeds 140 characters');
+  //   } else if ($('tweet-text').val().length === '' || null) {
+  //     alert('No Tweet submitted');
+  //   }
+  // });
+
   const $form = $('form');
   $form.on('submit', event => {
     event.preventDefault();
