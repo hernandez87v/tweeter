@@ -52,12 +52,16 @@ header.head-container {
   /* align-self: center; */
 }
 
-p.last-tweet-container {
-  position: absolute;
-  width: 95%;
-  margin-top: 3.5em;
+p {
+  width: 100%;
+  margin-top: 3.8em;
+  margin-bottom: 0.5em;
   padding-left: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom-style: solid;
+  border-color: #545149;
 }
+
 article.tweets-container {
   margin-bottom: 2em;
 }
@@ -66,17 +70,18 @@ article:hover {
   box-shadow: 5px 5px #c8cfe4;
 }
 
-article:hover #tweet-username-container {
+article:hover .tweet-username-container {
   display: block;
+  color: #c8cfe4;
 }
 
-#tweet-username-container {
+.tweet-username-container {
   display: none;
   padding-right: 2em;
   padding-top: 0.6em;
 }
 
-#tweet-name-container {
+.tweet-name-container {
   padding-top: 0.6em;
 }
 
@@ -85,19 +90,11 @@ article:hover #tweet-username-container {
   width: 90%;
 }
 
-footer.foot-container {
+footer .foot-container {
   background-color: #f4f1ec;
   padding-left: 1em;
-  padding-top: 0.8em;
-  position: absolute;
-  margin-top: 11em;
-  font-size: small;
-  font-weight: 600;
+  font-weight: x-small;
   border-top: solid;
   border-color: #545149;
   width: 95%;
-}
-
-#error-message {
-  color: red;
 }

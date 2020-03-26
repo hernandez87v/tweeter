@@ -37,18 +37,19 @@ $(document).ready(function() {
     const $header = $('<header>').addClass('head-container');
     const $userName = $('<div>').text(tweet.user.name);
     const $userHandle = $('<div>')
-      .addClass('handle')
-      .text('tweet.user.handle');
+      .addClass('tweet-username-container')
+      .text(tweet.user.handle);
     const $content = $('<p>').text(tweet.content.text);
     const $footer = $('<footer>').addClass('foot-container');
-    const $date = $('<font>').text(tweet.created_at);
+    const $date = $('<div>').text(tweet.created_at);
     $header.append($userName);
     $header.append($userHandle);
     $article.append($header);
     $article.append($content);
     $footer.append($date);
-    console.log(tweet.content.text);
-    console.log(tweet.user.name);
+    $article.append($footer);
+    // console.log(tweet.content.text);
+    // console.log(tweet.created_at);
     return $article;
   };
 
