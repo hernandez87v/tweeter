@@ -4,6 +4,24 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+/* <article class="tweets-container">
+  <header class="head-container">
+    <div id="tweet-name-container">
+      <font color="#545149">Vlad</font>
+    </div>
+    <div id="tweet-username-container">
+      <font color="#C8CFE4">@vlad</font>
+    </div>
+  </header>
+  <p class="last-tweet-container">
+    Writing a random tweet for testing and seeing if it works. Also extra long
+    to fix spacing.
+  </p>
+  <footer class="foot-container">
+    <font color="#545149">1 day ago</font>
+  </footer>
+</article>; */
+
 $(document).ready(function() {
   // Fake data taken from initial-tweets.json
   const data = [
@@ -52,6 +70,15 @@ $(document).ready(function() {
     // console.log(tweet.created_at);
     return $article;
   };
+
+  const $form = $('form');
+  $form.on('submit', event => {
+    event.preventDefault();
+    const formData = $form.serialize();
+    $.post('/tweets/', formData).then(res => {
+      // console.log(res);
+    });
+  });
 
   const renderTweets = function(tweets) {
     for (const tweet of tweets) {
