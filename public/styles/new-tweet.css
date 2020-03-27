@@ -71,6 +71,7 @@ article:hover {
 }
 
 article:hover .tweet-username-container {
+  /* margin-right: 760px; */
   display: block;
   color: #c8cfe4;
 }
