@@ -59,6 +59,7 @@ p {
   padding-bottom: 1em;
   border-bottom-style: solid;
   border-color: #545149;
+  overflow-x: auto;
 }
 
 article.tweets-container {
@@ -74,19 +75,8 @@ article:hover .tweet-username-container {
   color: #c8cfe4;
 }
 
-.tweet-username-container {
+div.tweet-username-container {
   display: none;
-  padding-right: 6em;
-  padding-top: 0.6em;
-}
-
-.tweet-name-container {
-  padding-top: 0.6em;
-}
-
-.head-container {
-  background-color: #f4f1ec;
-  width: 90%;
 }
 
 footer .foot-container {
