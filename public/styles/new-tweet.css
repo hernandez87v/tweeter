@@ -33,7 +33,6 @@ textarea {
 
 /* --------------------- NEW TWEETS IN CONTAINER ------------------- */
 article {
-  position: absolute;
   margin-top: 170px;
   height: 220px;
   width: 90%;
@@ -97,4 +96,8 @@ footer .foot-container {
   border-top: solid;
   border-color: #545149;
   width: 95%;
+}
+
+#error-message {
+  color: red;
 }
