@@ -1,16 +1,19 @@
 button {
   background-color: #4052a0;
   font-family: 'Bungee', cursive;
-  position: absolute;
-  margin-top: 4em;
+  margin-top: 0.5em;
   border: none;
 }
 
 output.counter {
   font-family: 'Bungee', cursive;
-  position: absolute;
-  right: 6%;
-  margin-top: 4em;
+  margin-top: 0.5em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1em;
 }
 
 label {
@@ -21,21 +24,20 @@ label {
 
 textarea {
   font-family: 'Source Sans Pro', sans-serif;
-  padding-top: 1em;
-  position: absolute;
+  padding-top: 2em;
   background-color: #f4f1ec;
   border: none;
   border-bottom-style: solid;
   border-color: #545149;
   resize: none;
-  width: 90%;
+  width: 100%;
 }
 
 /* --------------------- NEW TWEETS IN CONTAINER ------------------- */
 article {
-  margin-top: 170px;
-  height: 220px;
-  width: 90%;
+  margin-top: 30px;
+  height: 200px;
+  width: 100%;
   border: 3px solid #545149;
   background-color: #f4f1ec;
   padding: 1em;
@@ -44,25 +46,23 @@ article {
 header.head-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 0px;
   height: 0px;
   width: 100%;
   color: #545149;
-  /* align-self: center; */
 }
 
 p {
   width: 100%;
-  margin-top: 3.8em;
-  margin-bottom: 0.5em;
+  margin-top: 2em;
+  margin-bottom: 0.2em;
   padding-left: 0.5em;
-  padding-bottom: 0.5em;
+  padding-bottom: 1em;
   border-bottom-style: solid;
   border-color: #545149;
 }
 
 article.tweets-container {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 article:hover {
@@ -76,7 +76,7 @@ article:hover .tweet-username-container {
 
 .tweet-username-container {
   display: none;
-  padding-right: 2em;
+  padding-right: 6em;
   padding-top: 0.6em;
 }
 
