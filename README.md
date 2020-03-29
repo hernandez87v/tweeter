@@ -15,3 +15,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+
+!["Screenshot of desktop page"](https://github.com/hernandez87v/tweeter/blob/master/docs/desktop-tweeter-page.png?raw=true)
+
+!["Screenshot of mobile page with hover oer tweet enabled to see @usernames"](https://github.com/hernandez87v/tweeter/blob/master/docs/hover-mobile-tweeter-page.png?raw=true)
