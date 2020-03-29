@@ -14,7 +14,6 @@ $(document).ready(function() {
       .text(tweet.user.handle);
     const $content = $('<p>').text(tweet.content.text);
     const $footer = $('<footer>').addClass('foot-container');
-    // const $date = $('<div>').text(tweet.created_at);
 
     let currentTime = Math.floor(Date.now() / 1000);
     let unix_timestamp = Math.floor(tweet.created_at) / 1000;
@@ -79,7 +78,6 @@ $(document).ready(function() {
   });
 
   const renderTweets = function(tweets) {
-    // tweets.reverse();
     for (const tweet of tweets) {
       $('#tweets-container').append(createTweetElement(tweet));
     }
@@ -99,5 +97,4 @@ $(document).ready(function() {
   };
 
   loadTweets();
-  //renderTweets(tweet);
 });
