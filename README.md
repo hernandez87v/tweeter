@@ -18,11 +18,5 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
-<<<<<<< HEAD
 !["Screenshot of desktop page"](https://github.com/hernandez87v/tweeter/blob/master/docs/desktop-tweeter-page.png?raw=true)
-
 !["Screenshot of mobile page with hover oer tweet enabled to see @usernames"](https://github.com/hernandez87v/tweeter/blob/master/docs/hover-mobile-tweeter-page.png?raw=true)
-=======
-!["Screenshot of desktop page"] (https://github.com/hernandez87v/tweeter/blob/master/docs/desktop-tweeter-page.png?raw=true)
-!["Screenshot of mobile page with hover oer tweet enabled to see @usernames"] (https://github.com/hernandez87v/tweeter/blob/master/docs/hover-mobile-tweeter-page.png?raw=true)
->>>>>>> 789f234cde82a7a99e93c50384c53efbddbb1213
