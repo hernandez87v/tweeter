@@ -3,7 +3,8 @@
 nav {
   display: block;
   font-family: 'Bungee', cursive;
-  background: #00cccc;
+  background-color: #00cccc;
+  background-image: url('https://www.transparenttextures.com/patterns/batthern.png');
   height: 120px;
   width: 100%;
   top: 0;

@@ -12,6 +12,7 @@ output.counter {
 
 footer {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding-bottom: 1em;
 }
@@ -43,11 +44,11 @@ article {
   padding: 1em;
 }
 
-header.head-container {
-  display: flex;
-  justify-content: space-between;
+.head-container {
+  display: flex; /* name and username
+  /* flex-direction: column; */
+  justify-content: space-evenly;
   height: 0px;
-  width: 100%;
   color: #545149;
 }
 
@@ -62,23 +63,18 @@ p {
   overflow-x: auto;
 }
 
-article.tweets-container {
+/* article.tweets-container {
   margin-bottom: 1em;
-}
+} */
 
 article:hover {
   box-shadow: 5px 5px #c8cfe4;
 }
 
-article:hover .tweet-username-container {
-  /* margin-right: 760px; */
+/* article:hover .tweet-username-container {
   display: block;
   color: #c8cfe4;
-}
-
-div.tweet-username-container {
-  display: none;
-}
+} */
 
 footer .foot-container {
   background-color: #f4f1ec;
