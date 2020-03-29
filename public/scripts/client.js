@@ -14,14 +14,36 @@ $(document).ready(function() {
       .text(tweet.user.handle);
     const $content = $('<p>').text(tweet.content.text);
     const $footer = $('<footer>').addClass('foot-container');
-    const $date = $('<div>').text(tweet.created_at);
-    // $('<div>').text(moment(tweet.created_at).fromNow());
-    // .text(tweet.created_at);
+    // const $date = $('<div>').text(tweet.created_at);
+
+    let currentTime = Math.floor(Date.now() / 1000);
+    let unix_timestamp = Math.floor(tweet.created_at) / 1000;
+    let elapsedTime = currentTime - unix_timestamp;
+    let seconds = Math.floor(elapsedTime);
+    let minutes = Math.floor(seconds / 60);
+    let hours = Math.floor(minutes / 60);
+    let days = Math.floor(hours / 24);
+    let months = Math.floor(days / 30);
+    let years = Math.floor(months / 12);
+
+    let $time = 0;
+    if (years >= 1) {
+      $time = $('<p>').text(years + ' years ago');
+    } else if (months >= 1) {
+      $time = $('<p>').text(months + ' months ago');
+    } else if (days >= 1) {
+      $time = $('<p>').text(days + ' days ago');
+    } else if (hours >= 1) {
+      $time = $('<p>').text(hours + ' hours ago');
+    } else if (minutes >= 1) {
+      $time = $('<p>').text(minutes + ' minutes ago');
+    } else $time = $('<p>').text(seconds + ' seconds ago');
+
     $header.append($userName);
     $header.append($userHandle);
     $article.append($header);
     $article.append($content);
-    $footer.append($date);
+    $footer.append($time);
     $article.append($footer);
     return $article;
   };

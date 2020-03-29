@@ -45,44 +45,43 @@ article {
 }
 
 .head-container {
-  display: flex; /* name and username
-  /* flex-direction: column; */
-  justify-content: space-evenly;
+  display: flex; /* name and username */
+  flex-direction: row;
+  margin-bottom: 2em;
+  justify-content: space-between;
   height: 0px;
   color: #545149;
 }
 
 p {
   width: 100%;
+  padding: 0em;
+  margin-bottom: 0px;
   margin-top: 2em;
-  margin-bottom: 0.2em;
   padding-left: 0.5em;
-  padding-bottom: 1em;
-  border-bottom-style: solid;
-  border-color: #545149;
-  overflow-x: auto;
+  word-wrap: break-word;
 }
-
-/* article.tweets-container {
-  margin-bottom: 1em;
-} */
 
 article:hover {
   box-shadow: 5px 5px #c8cfe4;
 }
 
-/* article:hover .tweet-username-container {
+.tweet-username-container {
+  display: none;
+}
+
+article:hover .tweet-username-container {
   display: block;
   color: #c8cfe4;
-} */
+}
 
-footer .foot-container {
+.foot-container {
   background-color: #f4f1ec;
-  padding-left: 1em;
-  font-weight: x-small;
+  padding: 0em;
+  margin: 0em;
+  font-size: medium;
   border-top: solid;
   border-color: #545149;
-  width: 95%;
 }
 
 #error-message {
