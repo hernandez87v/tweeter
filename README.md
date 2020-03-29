@@ -1,4 +1,4 @@
-# Tweeter Project :bird:
+# :speech_balloon: Tweeter Project :bird:
 
 Tweeter is a simple, single-page Twitter clone.
 
