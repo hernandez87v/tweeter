@@ -45,7 +45,7 @@ article {
 }
 
 .head-container {
-  display: flex; /* name and username */
+  display: flex;
   flex-direction: row;
   margin-bottom: 2em;
   justify-content: space-between;
