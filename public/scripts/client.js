@@ -4,8 +4,8 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-$(document).ready(function() {
-  const createTweetElement = function(tweet) {
+$(document).ready(function () {
+  const createTweetElement = (tweet) => {
     const $article = $('<article>').addClass('tweets-container');
     const $header = $('<header>').addClass('head-container');
     const $userName = $('<div>').text(tweet.user.name);
@@ -14,7 +14,6 @@ $(document).ready(function() {
       .text(tweet.user.handle);
     const $content = $('<p>').text(tweet.content.text);
     const $footer = $('<footer>').addClass('foot-container');
-
     let currentTime = Math.floor(Date.now() / 1000);
     let unix_timestamp = Math.floor(tweet.created_at) / 1000;
     let elapsedTime = currentTime - unix_timestamp;
@@ -24,7 +23,6 @@ $(document).ready(function() {
     let days = Math.floor(hours / 24);
     let months = Math.floor(days / 30);
     let years = Math.floor(months / 12);
-
     let $time = 0;
     if (years >= 1) {
       $time = $('<p>').text(years + ' years ago');
@@ -47,12 +45,11 @@ $(document).ready(function() {
     return $article;
   };
 
-  $('.tweet-block').submit(function(event) {
+  $('.tweet-block').submit((event) => {
     event.preventDefault();
-    let $form = $(this).serialize();
-    let $counter = $('.counter');
-    let $error = $('#error-message');
-
+    const $form = $(this).serialize();
+    const $counter = $('.counter');
+    const $error = $('#error-message');
     if ($form === 'text=') {
       $error.removeClass('hide');
       $error.text('No tweet to submit!');
@@ -64,20 +61,20 @@ $(document).ready(function() {
       $.ajax({
         method: 'POST',
         url: '/tweets',
-        data: $form
+        data: $form,
       })
         .then(() =>
-          $('.tweet-block').each(function() {
+          $('.tweet-block').each(function () {
             this.reset();
             $error.addClass('hide');
             $counter.text('140');
           })
         )
-        .then(data => loadTweets(data));
+        .then((data) => loadTweets(data));
     }
   });
 
-  const renderTweets = function(tweets) {
+  const renderTweets = function (tweets) {
     for (const tweet of tweets) {
       $('#tweets-container').append(createTweetElement(tweet));
     }
@@ -86,12 +83,12 @@ $(document).ready(function() {
   const loadTweets = () => {
     $.ajax({
       method: 'GET',
-      url: '/tweets'
+      url: '/tweets',
     })
-      .done(function(response) {
+      .done(function (response) {
         renderTweets(response);
       })
-      .fail(function(error) {
+      .fail(function (error) {
         console.log(`Error ${error.message}`);
       });
   };
