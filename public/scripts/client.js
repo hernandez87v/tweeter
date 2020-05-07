@@ -4,8 +4,8 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-$(document).ready(function() {
-  const createTweetElement = function(tweet) {
+$(document).ready(function () {
+  const createTweetElement = function (tweet) {
     const $article = $('<article>').addClass('tweets-container');
     const $header = $('<header>').addClass('head-container');
     const $userName = $('<div>').text(tweet.user.name);
@@ -47,7 +47,7 @@ $(document).ready(function() {
     return $article;
   };
 
-  $('.tweet-block').submit(function(event) {
+  $('.tweet-block').submit(function (event) {
     event.preventDefault();
     let $form = $(this).serialize();
     let $counter = $('.counter');
@@ -64,36 +64,34 @@ $(document).ready(function() {
       $.ajax({
         method: 'POST',
         url: '/tweets',
-        data: $form
+        data: $form,
       })
         .then(() =>
-          $('.tweet-block').each(function() {
+          $('.tweet-block').each(function () {
             this.reset();
             $error.addClass('hide');
             $counter.text('140');
           })
         )
-        .then(data => loadTweets(data));
+        .then(() => {
+          $('#tweet-text').val('');
+          $('#tweets-container').empty();
+          loadTweets();
+        });
     }
   });
 
-  const renderTweets = function(tweets) {
+  const renderTweets = function (tweets) {
     for (const tweet of tweets) {
-      $('#tweets-container').append(createTweetElement(tweet));
+      $('#tweets-container').prepend(createTweetElement(tweet));
     }
   };
 
-  const loadTweets = () => {
+  const loadTweets = function () {
     $.ajax({
       method: 'GET',
-      url: '/tweets'
-    })
-      .done(function(response) {
-        renderTweets(response);
-      })
-      .fail(function(error) {
-        console.log(`Error ${error.message}`);
-      });
+      url: 'http://localhost:8080/tweets/',
+    }).then((data) => renderTweets(data));
   };
 
   loadTweets();
