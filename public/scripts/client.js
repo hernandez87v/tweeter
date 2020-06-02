@@ -84,12 +84,14 @@ $(document).ready(function () {
   });
 
   const renderTweets = function (tweets) {
+    //Goes through tweets and calls createTweet element which then gets appended to the tweet container
     for (const tweet of tweets) {
       $('#tweets-container').prepend(createTweetElement(tweet));
     }
   };
 
   const loadTweets = function () {
+    //Shows recently created tweets
     $.ajax({
       method: 'GET',
       url: 'http://localhost:8080/tweets/',
