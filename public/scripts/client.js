@@ -83,6 +83,11 @@ $(document).ready(function () {
     }
   });
 
+  $('#compose').on('click', () => {
+    $('.new-tweet').slideToggle(500);
+    $('#tweet-text').focus();
+  });
+
   const renderTweets = function (tweets) {
     //Goes through tweets and calls createTweet element which then gets appended to the tweet container
     for (const tweet of tweets) {

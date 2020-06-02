@@ -23,3 +23,30 @@ span {
   right: 1.5em;
   flex-direction: column;
 }
+
+#compose {
+  color: #e31735;
+}
+
+.compose-button {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 1rem;
+  margin-right: 10vh;
+}
+
+#compose {
+  opacity: 1;
+  animation: fade 1.5s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

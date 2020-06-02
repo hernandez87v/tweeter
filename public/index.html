@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,700,700i&display=swap"
       rel="stylesheet"
     />
-
+    <script src="https://kit.fontawesome.com/cd7e20452a.js"></script>
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
@@ -38,8 +38,13 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
-      <span class="nav-write-tweet"><b>Write</b> a new tweet</span>
+      <div>
+        <span>tweeter</span>
+      </div>
+      <div class="compose-button">
+        <span class="nav-write-tweet"><b>Write</b> a new tweet</span>
+        <i id="compose" class="fas fa-angle-double-down animated fadeout"></i>
+      </div>
     </nav>
     <header class="user-profile-display">
       <div class="profile-avatar">
