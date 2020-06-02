@@ -25,6 +25,7 @@ label {
 
 textarea {
   font-family: 'Source Sans Pro', sans-serif;
+  overflow-wrap: break-word;
   padding-top: 2em;
   background-color: #f4f1ec;
   border: none;
