@@ -1,3 +1,6 @@
+// To track textarea typed characters and output # of each character
+// Also changes the color of text based on amount of characters left out of the max allowed which is 140
+
 $(document).ready(function () {
   $('textarea').on('input', function (event) {
     const count = $(event.target).val().length;
