@@ -25,7 +25,7 @@ $(document).ready(function () {
     const days = Math.floor(hours / 24);
     const months = Math.floor(days / 30);
     const years = Math.floor(months / 12);
-    let time = 1;
+    time = 1;
     if (years >= 1) {
       time = $('<p>').text(years + ' years ago');
     } else if (months >= 1) {
@@ -47,6 +47,7 @@ $(document).ready(function () {
     $article.append($footer);
     return $article;
   };
+
   //Event listener for the tweet button
   $('.tweet-block').submit(function (event) {
     event.preventDefault();
