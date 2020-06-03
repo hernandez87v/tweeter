@@ -57,7 +57,7 @@ $(document).ready(function () {
       $error.removeClass('hide');
       $error.text('No tweet to submit!');
       $counter.text('140');
-    } else if ($form.length > 145) {
+    } else if ($form.length - 10 >= 140) {
       $error.removeClass('hide');
       $error.text('Your tweet exceeds 140 characters!');
     } else {
