@@ -25,7 +25,6 @@ label {
 
 textarea {
   font-family: 'Source Sans Pro', sans-serif;
-  overflow-wrap: break-word;
   padding-top: 2em;
   background-color: #f4f1ec;
   border: none;
@@ -38,11 +37,12 @@ textarea {
 /* --------------------- NEW TWEETS IN CONTAINER ------------------- */
 article {
   margin-top: 30px;
-  height: 200px;
+  height: 220px;
   width: 100%;
   border: 3px solid #545149;
   background-color: #f4f1ec;
   padding: 1em;
+  overflow-wrap: normal;
 }
 
 .head-container {
@@ -60,7 +60,6 @@ p {
   margin-bottom: 0px;
   margin-top: 2em;
   padding-left: 0.5em;
-  word-wrap: break-word;
 }
 
 article:hover {

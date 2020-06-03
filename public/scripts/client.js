@@ -14,6 +14,7 @@ $(document).ready(function () {
       .text(tweet.user.handle);
     const $content = $('<p>').text(tweet.content.text);
     const $footer = $('<footer>').addClass('foot-container');
+
     // Tweet countdown timer when posted -- START --
     const currentTime = Math.floor(Date.now() / 1000);
     const unix_timestamp = Math.floor(tweet.created_at) / 1000;
@@ -24,7 +25,6 @@ $(document).ready(function () {
     const days = Math.floor(hours / 24);
     const months = Math.floor(days / 30);
     const years = Math.floor(months / 12);
-
     let time = 1;
     if (years >= 1) {
       time = $('<p>').text(years + ' years ago');
@@ -38,6 +38,7 @@ $(document).ready(function () {
       time = $('<p>').text(minutes + ' minutes ago');
     } else time = $('<p>').text(seconds + ' seconds ago');
     // Tweet countdown timer when posted -- END --
+
     $header.append($userName);
     $header.append($userHandle);
     $article.append($header);
